@@ -2,7 +2,6 @@ import random
 
 while 1:
 	text = (input("what do you chose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
-#	if text 
 
 	choise = int(text)
 	vector = ["Pedra", "Papel", "Tesoura"]
