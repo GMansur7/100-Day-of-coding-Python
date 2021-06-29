@@ -4,8 +4,9 @@ for n in range(0, len(student_scores)):
 	student_scores[n] = int(student_scores[n])
 print(student_scores)
 ##################################################################
-soma = 0
+max = 0
 for x in student_scores:
-	soma += x 
-media = round(soma/(n + 1))
-print(media)
+	if x > max:
+		max = x 
+
+print("The max score is :", max)
