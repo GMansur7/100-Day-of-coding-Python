@@ -4,8 +4,12 @@ for n in range(0, len(student_heights)):
 	student_heights[n] = int(student_heights[n])
 print(student_heights)
 ##################################################################
-soma = 0
+max = 0
+min = 0
 for x in student_heights:
-	soma += x 
-media = round(soma/(n + 1))
-print(media)
+	if x > max:
+		max = x
+	if x < min:
+		min = x
+print(max)
+print(min)
