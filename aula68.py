@@ -1,7 +1,6 @@
 #Hangman project
 import random, hang_man_library
 
-#word_list = ["Cereja", "balloon", "camel", "plastation", "game", "house"]
 word = random.choice(hang_man_library.word_list)
 word_chosen = []
 hide_word = []
@@ -10,7 +9,6 @@ for x in word:
 	word_chosen.append(x)
 	hide_word.append("_")
 	
-#print(word_chosen)
 print(f"{hang_man_library.logo}\nYou are play the HangMan! \nThe word is: ")
 print(hide_word)
 lifes = 6
@@ -26,12 +24,12 @@ while not and_game:
 			position += 1
 	if letter not in word_chosen:
 		lifes -= 1
-	#print(f"You have: {lifes} lifes")
-	print (hang_man_library.stages[lifes])
+		print (hang_man_library.stages[lifes])
 	print(hide_word)
 	if "_" not in hide_word:
 		and_game = True
 		print("You Win!")
 	if lifes == 0:
 		and_game = True
+		print(f"The word is:\n{word_chosen}")
 		print("You Loose!")

@@ -30,4 +30,4 @@ for n in password1:
 password2 = ""
 for x in password1:
 	password2 += x
-print("Your password is: ", password2)
+print(password2)
