@@ -1,29 +1,23 @@
-#import calc_art
-#print(calc_art.logo)
+from replit import clear
 from calc_art import logo
 print (logo)
 def multiplicação (a, b):
 	return  a * b
-
 def divisão (a, b):
 	return a / b
-
 def soma (a, b):
 	return a + b
-
 def subtração (a, b):
 	return a - b
-
 a = 0
 b = 0
 d = 1
 loop = True
 while loop:	
 	if a != d:
-		a = float(input("digite um número"))
-	operador = input("digite uma função: * / + -")
-	b = float(input("digite um segundo número"))
-	
+		a = float(input("What's the first number?: "))
+	operador = input("Pick an operation: \n *\n /\n +\n -\n")
+	b = float(input("What's the next number?: "))
 	if operador == "*":
 		d = multiplicação (a, b)
 	elif operador == "/":
@@ -33,17 +27,11 @@ while loop:
 	elif operador == "-":
 		d = subtração (a, b)
 	else:
-		print ("Operação inválida")
-				
-			
-	print(f"{a} {operador} {b} = {d}")	
-	
-	x = input("quer continuar?")
-	
-	if x == "no":
-		loop = False
-	else:
-		y = input("quer usar o resultado anterior?")
-	
-		if y == "yes":
-			a = d
+		print ("Invalid operation")				
+	print(f"{a} {operador} {b} = {d}")
+	x = input(f"Type 'y' to comtinue calculating with {d}, or type 'n' to start a nem calculation: ")
+	if x == "y":
+		a = d
+	elif x == "n":
+		clear()
+		print (logo)
