@@ -1,20 +1,16 @@
-height = input ("enter your height in m: ")
-weight = input("enter your weight in kg: ")
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kg: "))
 
-m = float(height)
-kg = float(weight)
-bmi = (kg / (m **2))
+BMI = round(weight / (height**2), 2)
+print(BMI)
 
-print ("your BMI is: " + str("{:.2f}".format(bmi)))
-
-if bmi <= 18.5:
-	print("You are underweight")
-elif 18.5 <= bmi <= 25.0:
-	print("You are Normal")
-elif 25.0 <= bmi <= 30.0:
-	print("You are overweight")
+if BMI < 18.5:
+	print(f"Your BMI is {BMI}, underweight")
+elif BMI < 25:
+	print(f"Your BMI is {BMI}, normal weight")
+elif BMI < 30:
+	print(f"Your BMI is {BMI}, overweight")
+elif BMI < 35:
+	print(f"Your BMI is {BMI}, obese")
 else:
-	print(" Cê tá gordo pacas em bixo")
-	
-ideal_weight ="{:.2f}".format((m**2) * 25)
-print("Seu peso ideal é: ", ideal_weight)
+	print("clinically obese")
