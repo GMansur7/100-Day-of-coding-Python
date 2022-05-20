@@ -4,5 +4,5 @@ random_integer = random.randint(0,1) #random.randrange(0,2) # iteriros aleatóri
 
 if (random_integer == 0):
     print("Head")
-else:
+else:   
     print("Tails")
