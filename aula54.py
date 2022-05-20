@@ -21,7 +21,7 @@ for n in range(0, nr_numbers):
 
 	#print(password1)
 
-#hard way
+#hard way to do
 for n in password1:
 	random.shuffle(password1)
 
