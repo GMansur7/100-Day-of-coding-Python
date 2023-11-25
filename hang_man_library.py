@@ -67,7 +67,7 @@ logo = '''
 word_list = [
  'abruptly', 
  'absurd', 
- 'abyss', 
+ 'abyss',
  'affix', 
  'askew', 
  'avenue', 
@@ -197,6 +197,7 @@ word_list = [
  'phlegm', 
  'pixel', 
  'pizazz', 
+ 'playstation' 
  'pneumonia', 
  'polka', 
  'pshaw', 
